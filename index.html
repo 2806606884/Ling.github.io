@@ -1,46 +1,33 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title></title>
-<style>
-  .heart {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    transform: rotate(45deg);
-  }
-
-  .heart:before,
-  .heart:after {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-  }
-
-  .heart:before {
-    top: -50px;
-    left: 0;
-  }
-
-  .heart:after {
-    top: 0;
-    left: -50px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+        var myLabels = [
+    "长夜漫漫，愿你不再失眠"，
+    "早点睡，别熬太晚",
+  ];
+   
+   ul {
+     list-style-type: none;
+     padding: 0;
+   }
+   
+   li {
+     padding: 10px 0;
+     border-bottom: 1px solid #ccc;
+   }
+   
+   li:last-child {
+     border-bottom: none;
+   }
+ </style>
 </head>
 <body>
-  <div class="heart"></div>
-  <script>
-    var myLabels = [
-      "长夜漫漫，愿你不再失眠"，
-      "早点睡，别熬太晚"
-    ];
-  </script>
+  <ul>
+    <li> 长夜漫漫，愿你不再失眠</li>
+    </li>早点睡，别熬太晚</li>
+  </ul>
 </body>
 </html>
